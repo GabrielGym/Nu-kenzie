@@ -22,8 +22,10 @@ export function DashBoard({ Logout }) {
 
     return (
         <div className='colorFundo'>
+            <span className='linhaHeader'></span>
             <div className='conteiner'>
                 <Header BtnLogout={Logout} />
+                
                 {listTransactions.length > 0 ? (
                     <Section listTransactions={listTransactions} setListTransactions={setListTransactions} removeObject={removeObject} addObject={addObject} />
                 ) : (

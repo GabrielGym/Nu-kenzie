@@ -144,18 +144,30 @@ table {
 	flex-direction: column;
 	margin: 0 auto;
 	min-height: 100vh;
-
 	background-color: #FFFFFF;
 	max-width: 1000px;
+}
+
+
+.linhaHeader{
+	border-bottom: 1mm ridge rgba(0, 0, 0, 0.1);
+	position: absolute;
+	z-index: 1px;
+	left: 0;
+	right: 0;
+	top: 125px;
 }
 
 .conteinerPrincipal{
 	padding: 10px;
 	margin: 10px;
-
 	display: flex;
 	flex-direction: column;
-	max-width: 380px;
+	max-width: 400px;
+}
+
+.conteinerPrincipal > section {
+	flex-direction: column;
 }
 
 .title{
@@ -163,22 +175,29 @@ table {
     font-weight: 700;
     line-height: 1.9rem;
     font-family: 'Nunito', sans-serif;
-    margin-top: 20px;
+    margin-bottom: 20px;
 	color: #212529;
 }
 
 .conteinerFinanceiro{
 	display: flex;
-	flex-direction: column;
+	flex-direction:column-reverse;
 	gap: 30px;
-	max-width: 100%;
+    width: 100%;
+	max-width: 400px;
 }
 
 @media (min-width:900px) {
 	.conteinerPrincipal{
 		flex-direction: row;
 		gap: 50px;
-		max-width: 100%;
+		width: 100%;
+		max-width: 1000px;
+		margin: 0 auto;
 		justify-content: center;
+	}
+	.conteinerFinanceiro{
+		min-width: 100%;
+		width: 600px;
 	}
 }

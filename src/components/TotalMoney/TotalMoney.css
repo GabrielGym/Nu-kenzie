@@ -7,7 +7,7 @@
     margin-top: 25px;
 }
 
-.conteinerValor > h2 {
+.conteinerValor>h2 {
     font-size: 1rem;
     font-weight: 700;
     line-height: 1.9rem;
@@ -28,7 +28,7 @@
     right: 15px;
 }
 
-.info{
+.info {
     font-size: 0.8rem;
     font-weight: 400;
     line-height: 1.3rem;
@@ -38,10 +38,7 @@
 }
 
 @media (min-width: 900px) {
-    .conteinerValor{
+    .conteinerValor {
         margin-top: 0px;
-        width: 100%;
-        min-width: 400px;
-    
     }
 }
