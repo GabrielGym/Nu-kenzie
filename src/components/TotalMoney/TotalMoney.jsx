@@ -1,28 +1,28 @@
 import Style from './TotalMoney.css'
+import { useState } from 'react'
 
 export const TotalMoney = ({ array }) => {
-    const newValue = []
     const add = []
     const sub = []
+
     const valores = array.map(lista => {
-        newValue.push(lista.value)
-    })
-    newValue.forEach(valor => {
-        if(valor >= 0) {
-           return add.push(valor)
+        if (lista.type === 'entrada') {
+            const valor = lista.value
+            add.push(Number(valor))
         } else {
-            sub.push(valor)
+            const valor = lista.value
+            sub.push(Number(valor))
         }
     })
 
-    let valorP = add.reduce((acumulador, valorTotal) => acumulador + valorTotal, 0)
-    let valorN = sub.reduce((acumulador, valorTotal) => acumulador + valorTotal, 0)
+    const somaAdd = add.reduce((acumulador, valorTotal) => acumulador + valorTotal, 0) 
+    const somaSub = sub.reduce((acumulador, valorTotal) => acumulador + valorTotal, -0) 
 
-    let soma = valorP + valorN
-    
+    const soma = somaAdd - somaSub 
+
     return (
         <div className='conteinerValor'>
-            <h2>Valor total:</h2>
+            <h2>Valor total: </h2>
             <p className='valor'>$ {soma}</p>
             <p className='info'>O valor se refere ao saldo</p>
         </div>
