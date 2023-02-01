@@ -5,7 +5,7 @@ import Styles from './Form.css'
 export const Form = ({ listTransactions, addObject }) => {
     const [formData, setFormdata] = useState({
         description: "",
-        type: "entrada",
+        type: "Entrada",
         value: "",
     })
 

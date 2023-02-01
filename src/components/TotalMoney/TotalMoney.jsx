@@ -6,7 +6,7 @@ export const TotalMoney = ({ array }) => {
     const sub = []
 
     const valores = array.map(lista => {
-        if (lista.type === 'entrada') {
+        if (lista.type === 'Entrada') {
             const valor = lista.value
             add.push(Number(valor))
         } else {

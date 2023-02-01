@@ -48,3 +48,11 @@
     left: 12px;
     bottom: 20px;
 }
+
+.borderGreen{
+    border-left: 4px solid #03B898;
+}
+
+.borderGrey{
+    border-left: 4px solid #E9ECEF;
+}
