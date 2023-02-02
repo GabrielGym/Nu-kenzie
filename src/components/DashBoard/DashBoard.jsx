@@ -22,7 +22,6 @@ export function DashBoard({ Logout }) {
 
     return (
         <div className='colorFundo'>
-            <span className='linhaHeader'></span>
             <div className='conteiner'>
                 <Header BtnLogout={Logout} />
                 

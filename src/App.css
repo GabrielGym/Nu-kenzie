@@ -148,16 +148,6 @@ table {
 	max-width: 1000px;
 }
 
-
-.linhaHeader{
-	border-bottom: 1mm ridge rgba(0, 0, 0, 0.1);
-	position: absolute;
-	z-index: 1px;
-	left: 0;
-	right: 0;
-	top: 125px;
-}
-
 .conteinerPrincipal{
 	padding: 10px;
 	margin: 10px;
